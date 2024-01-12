@@ -2,67 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flask-Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
-    * {
-      text-align: center;
-      font-family: Roboto;
-      font-weight: normal;
-    }
-
-    h1 {
-      font-size: 40px;
-      color: rgb(100, 100, 100);
-    }
-
     #banner {
-      width: 100%;
       height: 360px;
+      width: 100%;
       object-fit: cover;
-    }
-
-    h2 {
-      font-size: 32px;
-      font-family: Roboto;
-      color: rgb(100, 100, 100);
-    }
-
-    .bodyText {
-      font-family: Roboto;
-      color: rgb(80, 80, 80);
-    }
-
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .contactButton {
-      text-align: center;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Intro Website</h1>
-    <img id="banner"
+    <h1 class="text-center mt-2 mb-4">Intro Website</h1>
+    <img class="img-fluid" id="banner"
       src="https://cccf7347-d45e-4b7b-b914-db016c95ad93-00-3fmt3t7jsji5q.sisko.replit.dev/static/banner.jpg"
       alt="banner" height="320" width=auto>
-    <h2>About</h2>
-    <p class="bodyText">
+    <h2 class="text-center mt-2 mb-4">About</h2>
+    <p class="lead">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam autem. Pariatur, molestias natus rem
       deleniti laboriosam eum aperiam provident amet cupiditate itaque distinctio, maxime obcaecati sit hic nihil
       officiis.
     </p>
-    <h2>Open Positions</h2>
-    <p class="bodyText">TODO - show the job openings here</p>
-    <div>
-      <button class="contactButton">Contact us</button>
-      <p>
+    <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+    <p>TODO - show the job openings here</p>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact us</button>
+      <p class="mt-4">
         Copyright 2024
       </p>
     </div>
