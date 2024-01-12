@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flask-Website</title>
+  <style>
+    * {
+      text-align: center;
+      font-family: Roboto;
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: rgb(100, 100, 100);
+    }
+
+    #banner {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-family: Roboto;
+      color: rgb(100, 100, 100);
+    }
+
+    .bodyText {
+      font-family: Roboto;
+      color: rgb(80, 80, 80);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .contactButton {
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-  
+  <div class="container">
+    <h1>Intro Website</h1>
+    <img id="banner"
+      src="https://cccf7347-d45e-4b7b-b914-db016c95ad93-00-3fmt3t7jsji5q.sisko.replit.dev/static/banner.jpg"
+      alt="banner" height="320" width=auto>
+    <h2>About</h2>
+    <p class="bodyText">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam autem. Pariatur, molestias natus rem
+      deleniti laboriosam eum aperiam provident amet cupiditate itaque distinctio, maxime obcaecati sit hic nihil
+      officiis.
+    </p>
+    <h2>Open Positions</h2>
+    <p class="bodyText">TODO - show the job openings here</p>
+    <div>
+      <button class="contactButton">Contact us</button>
+      <p>
+        Copyright 2024
+      </p>
+    </div>
+  </div>
 </body>
+
 </html>
