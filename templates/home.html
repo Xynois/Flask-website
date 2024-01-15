@@ -17,9 +17,9 @@
 
 <body>
   <div class="container">
-    <h1 class="text-center mt-2 mb-4">Intro Website</h1>
+    <h1 class="text-center mt-2 mb-4">{{company_name}} Website</h1>
     <img class="img-fluid" id="banner"
-      src="https://cccf7347-d45e-4b7b-b914-db016c95ad93-00-3fmt3t7jsji5q.sisko.replit.dev/static/banner.jpg"
+      src="/static/banner.jpg"
       alt="banner" height="320" width=auto>
     <h2 class="text-center mt-2 mb-4">About</h2>
     <p class="lead">
@@ -28,7 +28,11 @@
       officiis.
     </p>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-    <p>TODO - show the job openings here</p>
+    <div>
+      {% for job in jobs %}
+       {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact us</button>
       <p class="mt-4">
