@@ -13,20 +13,31 @@
       object-fit: cover;
     }
   </style>
+  <script>
+    var toggleButton = document.getElementById('toggleButton');
+    toggleButton.addEventListener('click', function() {
+      window.location.href = 'index.html';
+    });
+  </script>
 </head>
 
 <body>
+  {% include 'nav.html' %}
+  <img class="img-fluid" id="banner"
+  src="/static/banner.jpg"
+  alt="banner" height="320" width=auto>
   <div class="container">
     <h1 class="text-center mt-2 mb-4">{{company_name}} Website</h1>
-    <img class="img-fluid" id="banner"
-      src="/static/banner.jpg"
-      alt="banner" height="320" width=auto>
-    <h2 class="text-center mt-2 mb-4">About</h2>
+    <div class="row mx-auto">
+      <div class="col-md-6">
     <p class="lead">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam autem. Pariatur, molestias natus rem
-      deleniti laboriosam eum aperiam provident amet cupiditate itaque distinctio, maxime obcaecati sit hic nihil
-      officiis.
+      Explore JobReady, your go-to platform for a hassle-free job search. Whether you're a recent graduate or a seasoned professional, our user-friendly website connects you with diverse job opportunities across industries. Easily browse and apply for jobs, and keep track of your applications with our straightforward interface. Get personalized job alerts, build your resume, and tap into professional networking opportunities. We're here to simplify your job search journey, providing the tools and insights you need to land your dream job. Join CareerLinkPro.com today and take the next step in your career with confidence.
     </p>
+    </div>
+      <div class="d-none d-md-block col-md-6">
+      <img  src="static/people.jpg" style="height: 320px; border-radius: 4px;">
+      </div>
+    </div>
     <h2 class="text-center mt-2 mb-4">Job Openings</h2>
     <div>
       {% for job in jobs %}
@@ -34,12 +45,10 @@
       {% endfor %}
     </div>
     <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact us</button>
-      <p class="mt-4">
-        Copyright 2024
-      </p>
+      <a href="mailto:achinthyaunm18@gmail.com?subject=Question%20about%20Job%20Openings&body=My%20Name%3A%20%3Cyour%20name%3E%0D%0A%0D%0AMy%20Questions%3A%20%3Cyour%20Questions%3E" class="btn btn-primary btn-lg">Contact us</a>
     </div>
   </div>
+  {%include 'footer.html'%}
 </body>
 
 </html>

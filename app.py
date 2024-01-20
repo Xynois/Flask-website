@@ -37,7 +37,7 @@ def list_jobs():
 def hello():
   return render_template("home.html", 
                          jobs=JOBS,
-                        company_name = 'Google')
+                        company_name = 'JobReady')
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
